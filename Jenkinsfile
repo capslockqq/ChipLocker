@@ -1,8 +1,7 @@
 pipeline {
     agent { 
-        docker {
-            image 'build'
-            reuseNode true
+        dockerfile {
+            args '-t build'
         } 
     }
     stages {

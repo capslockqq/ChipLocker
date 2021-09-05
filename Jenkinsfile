@@ -4,7 +4,7 @@ pipeline {
         stage("build") {
             steps {
                 sh "ls"
-                sh "pio"
+                sh "pio run -e esp32doit-devkit-v1"
             }
         }
     }

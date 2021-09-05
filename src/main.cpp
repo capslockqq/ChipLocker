@@ -11,7 +11,7 @@
 void do_stuff() {
   for (;;) {
     printf("Hello there \n");
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    std::this_thread::sleep_for(std::chrono::seconds(10));
   }
 }
 
@@ -34,5 +34,10 @@ std::thread thread(&do_stuff);
 extern "C" {
   void app_main() {
     thread.join();
+
   }
+}
+
+int main() {
+  return 0;
 }

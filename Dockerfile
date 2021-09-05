@@ -6,7 +6,6 @@ RUN apt-get install python3-pip -y
 RUN apt-get install git -y
 RUN pip install platformio
 RUN platformio platform install --with-package=framework-espidf \
-    --with-package=toolchain-esp32ulp \
     --with-package=toolchain-xtensa32 \
     --with-package=tool-cmake \
     --with-package=tool-esptoolpy \

@@ -13,11 +13,10 @@ RUN platformio platform install --with-package=framework-espidf \
     --with-package=tool-ninja \
       espressif32
 
-# COPY . /project
-# WORKDIR /project
+COPY . /project
+WORKDIR /project
 
 
-# FROM init AS build
 
 # RUN --mount=type=cache,target=/root/.platformio --mount=type=cache,target=/project/.pio pio run
 
